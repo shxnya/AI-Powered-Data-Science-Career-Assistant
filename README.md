@@ -26,6 +26,16 @@ A Machine Learning and NLP-powered web application that helps aspiring Data Scie
 * HTML
 * CSS
 
+## Screenshots
+
+### Home Page
+
+![Home Page](home_page.png)
+
+### Resume Analysis
+
+![Resume Analysis](resume_analysis.png)
+
 ## Developed By
 
 Sharanya Bhat
