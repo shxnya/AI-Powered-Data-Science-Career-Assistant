@@ -1,0 +1,99 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "hello",
+        "hi",
+        "hey"
+      ],
+      "responses": [
+        "Hello! How can I help you?"
+      ]
+    },
+
+    {
+      "tag": "skills",
+      "patterns": [
+        "what skills do i need",
+        "required skills",
+        "data science skills"
+      ],
+      "responses": [
+        "You need Python, SQL, Statistics and Machine Learning."
+      ]
+    },
+
+    {
+      "tag": "resume",
+      "patterns": [
+        "how to improve my resume",
+        "resume tips",
+        "make my resume better"
+      ],
+      "responses": [
+        "Add projects, internships, certifications and a GitHub portfolio."
+      ]
+    },
+
+    {
+      "tag": "interview",
+      "patterns": [
+        "data science interview questions",
+        "interview preparation",
+        "how to prepare for interview"
+      ],
+      "responses": [
+        "Focus on Python, SQL, Statistics, Machine Learning and project explanations."
+      ]
+    },
+
+    {
+      "tag": "nlp_projects",
+      "patterns": [
+        "suggest nlp projects",
+        "nlp ideas",
+        "natural language processing project"
+      ],
+      "responses": [
+        "Try Fake News Detection, Sentiment Analysis, Resume Screening or Chatbot Development."
+      ]
+    },
+
+    {
+      "tag": "ml_projects",
+      "patterns": [
+        "suggest machine learning projects",
+        "ml project ideas",
+        "machine learning project"
+      ],
+      "responses": [
+        "Customer Churn Prediction, House Price Prediction and Credit Risk Analysis are great projects."
+      ]
+    },
+
+    {
+      "tag": "roadmap",
+      "patterns": [
+        "how to become data scientist",
+        "data science roadmap",
+        "career roadmap"
+      ],
+      "responses": [
+        "Learn Python, SQL, Statistics, Machine Learning, Projects, Deployment and Interview Skills."
+      ]
+    },
+
+    {
+      "tag": "python",
+      "patterns": [
+        "why learn python",
+        "python for data science",
+        "importance of python"
+      ],
+      "responses": [
+         "Python is widely used in Data Science because of libraries like Pandas, NumPy and Scikit-Learn."
+      ]
+    }
+  ]
+}

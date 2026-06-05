@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Data Science Career Assistant</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>🤖 Data Science Career Assistant</h1>
+
+    <form method="POST" enctype="multipart/form-data">
+
+        <input
+            type="text"
+            name="message"
+            placeholder="Ask me about Data Science..."
+            required>
+
+        <br><br>
+
+         <label>Upload Resume (PDF):</label>
+
+         <input type="file" name="resume">
+         <br></br>
+
+        <button type="submit">Send</button>
+
+    </form>
+
+    {% if response %}
+
+    <div class="chat-box">
+
+          <p><strong>You:</strong> {{ user_message }}</p>
+
+          <hr>
+
+         <p><strong>Bot:</strong> {{ response }}</p>
+
+    </div>
+
+     {% endif %}
+     {% if found_skills %}
+
+<div class="chat-box">
+
+    <h2>📄 Resume Analysis</h2>
+
+    <p><strong>Resume Score:</strong> {{ score }}%</p>
+    <div style="width:100%; background:#ddd; border-radius:10px;">
+        <div style="
+            width:{{ score }}%;
+            background:green;
+            color:white;
+            padding:10px;
+            border-radius:10px;
+            text-align:center;">
+            {{ score }}%
+        </div>
+</div>
+
+    <h3>✅ Skills Found</h3>
+
+    <ul>
+        {% for skill in found_skills %}
+            <li>{{ skill }}</li>
+        {% endfor %}
+    </ul>
+
+    <h3>❌ Missing Skills</h3>
+
+    <ul>
+        {% for skill in missing_skills %}
+            <li>{{ skill }}</li>
+        {% endfor %}
+    </ul>
+    <h3>🚀 Recommendations</h3>
+
+    <ul>
+        {% for rec in recommendations %}
+            <li>{{ rec }}</li>
+    {% endfor %}
+    </ul>
+    <h3>🗺️ Career Roadmap</h3>
+
+    <ul>
+        {% for step in roadmap %}
+            <li>{{ step }}</li>
+    {% endfor %}
+    </ul>
+
+</div>
+
+{% endif %}
+
+</div>
+<hr>
+
+<p style="text-align:center;">
+    Developed by Sharanya Bhat
+</p>
+
+</body>
+</html>
