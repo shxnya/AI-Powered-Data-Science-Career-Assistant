@@ -18,6 +18,7 @@ required_skills = [
     "data visualization"
 ]
 app = Flask(__name__)
+os.makedirs("uploads", exist_ok=True)
 
 with open("intents.json", "r") as file:
     data = json.load(file)
