@@ -36,6 +36,9 @@ A Machine Learning and NLP-powered web application that helps aspiring Data Scie
 
 ![Resume Analysis](resume_analysis.png)
 
+## Live Demo:
+https://ai-powered-data-science-career-assistant.onrender.com/
+
 ## Developed By
 
 Sharanya Bhat
